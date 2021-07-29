@@ -65,7 +65,7 @@ macro(rocm_create_package)
     endif()
 
     rocm_get_patch_version(ROCM_VERSION_NUM)
-    if(ROCM_VERSION_NUM)
+    if(${ROCM_VERSION_NUM})
         set(CPACK_PACKAGE_VERSION "${CPACK_PACKAGE_VERSION}.${ROCM_VERSION_NUM}")
     endif()
 
