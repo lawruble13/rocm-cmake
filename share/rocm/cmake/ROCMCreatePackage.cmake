@@ -59,13 +59,13 @@ macro(rocm_create_package)
         set(CPACK_SET_DESTDIR
             ON
             CACHE BOOL "Boolean toggle to make CPack use DESTDIR mechanism when packaging")
-        if(CPACK_SET_DESTDIR)
+        if("${CPACK_SET_DESTDIR}")
             set(CPACK_PACKAGING_INSTALL_PREFIX "")
         endif()
     endif()
 
     rocm_get_patch_version(ROCM_VERSION_NUM)
-    if("${ROCM_VERSION_NUM}")
+    if(ROCM_VERSION_NUM)
         set(CPACK_PACKAGE_VERSION "${CPACK_PACKAGE_VERSION}.${ROCM_VERSION_NUM}")
     endif()
 
