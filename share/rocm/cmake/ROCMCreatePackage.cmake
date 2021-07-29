@@ -59,6 +59,9 @@ macro(rocm_create_package)
         set(CPACK_SET_DESTDIR
             ON
             CACHE BOOL "Boolean toggle to make CPack use DESTDIR mechanism when packaging")
+        if(${CPACK_SET_DESTDIR})
+            set(CPACK_PACKAGING_INSTALL_PREFIX "")
+        endif()
     endif()
 
     rocm_get_patch_version(ROCM_VERSION_NUM)
@@ -101,8 +104,19 @@ macro(rocm_create_package)
             "${CPACK_PACKAGE_NAME}-devel (>=${CPACK_PACKAGE_VERSION})")
         rocm_join_if_set(", " CPACK_RPM_DEVEL_PACKAGE_REQUIRES
             "${CPACK_PACKAGE_NAME} >= ${CPACK_PACKAGE_VERSION}")
-        rocm_join_if_set(", " CPACK_RPM_UNSPECIFIED_PACKAGE_SUGGESTS
-            "${CPACK_PACKAGE_NAME}-devel >= ${CPACK_PACKAGE_VERSION}")
+        execute_process(
+            COMMAND rpmbuild --version
+            RESULT_VARIABLE PROC_RESULT
+            OUTPUT_VARIABLE EVAL_RESULT
+            OUTPUT_STRIP_TRAILING_WHITESPACE
+        )
+        if(PROC_RESULT EQUAL "0" AND NOT EVAL_RESULT STREQUAL "")
+            string(REGEX MATCH "[0-9]+\\.[0-9]+\\.[0-9]+$" RPMBUILD_VERSION "${EVAL_RESULT}")
+            if (RPMBUILD_VERSION VERSION_GREATER_EQUAL "4.12.0")
+                rocm_join_if_set(", " CPACK_RPM_UNSPECIFIED_PACKAGE_SUGGESTS
+                    "${CPACK_PACKAGE_NAME}-devel >= ${CPACK_PACKAGE_VERSION}")
+            endif()
+        endif()
     endif()
 
     # '%{?dist}' breaks manual builds on debian systems due to empty Provides
