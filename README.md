@@ -16,6 +16,10 @@ ROCMCreatePackage
 rocm_create_package
 -------------------
 
+    rocm_join_if_set(<glue> <inout_variable> [<input>]...)
+
+Join all `input`s together with the `glue` string. If the `inout_variable` is not empty, then append this to the `inout_variable` with the `glue` string, otherwise set the `inout_variable`.
+
     rocm_create_package(
         NAME <name>
         [DESCRIPTION <description>]
