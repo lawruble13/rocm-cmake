@@ -4,7 +4,7 @@
 
 cmake_minimum_required (VERSION 3.6)
 
-set(CMAKE_INSTALL_PREFIX "/opt/rocm" CACHE PATH "")
+set(CMAKE_INSTALL_PREFIX "$ENV{ROCM_PATH}" CACHE PATH "")
 
 project(rocm-cmake)
 
