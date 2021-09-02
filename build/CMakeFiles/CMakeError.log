@@ -1,0 +1,102 @@
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: C:/Users/lwrubles/source/repos/lawruble13/rocm-cmake/rocm-cmake/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_415f4.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.0+0538acc04 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30133 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CMakeCCompilerABI.c
+  cl /c /I"C:\github\vcpkg\scripts\buildsystems\msbuild\..\..\..\installed\x64-windows\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_415f4.dir\Debug\\" /Fd"cmTC_415f4.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeCCompilerABI.c"
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeCCompilerABI.c : fatal error C1090: PDB API call failed, error code '3': C:\Users\lwrubles\source\repos\lawruble13\rocm-cmake\rocm-cmake\build\CMakeFiles\CMakeTmp\cmTC_415f4.dir\Debug\vc142.pdb [C:\Users\lwrubles\source\repos\lawruble13\rocm-cmake\rocm-cmake\build\CMakeFiles\CMakeTmp\cmTC_415f4.vcxproj]
+
+
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: C:/Users/lwrubles/source/repos/lawruble13/rocm-cmake/rocm-cmake/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_3fa61.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.0+0538acc04 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30133 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  testCCompiler.c
+  cl /c /I"C:\github\vcpkg\scripts\buildsystems\msbuild\..\..\..\installed\x64-windows\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_3fa61.dir\Debug\\" /Fd"cmTC_3fa61.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\Users\lwrubles\source\repos\lawruble13\rocm-cmake\rocm-cmake\build\CMakeFiles\CMakeTmp\testCCompiler.c"
+C:\Users\lwrubles\source\repos\lawruble13\rocm-cmake\rocm-cmake\build\CMakeFiles\CMakeTmp\testCCompiler.c : fatal error C1090: PDB API call failed, error code '3': C:\Users\lwrubles\source\repos\lawruble13\rocm-cmake\rocm-cmake\build\CMakeFiles\CMakeTmp\cmTC_3fa61.dir\Debug\vc142.pdb [C:\Users\lwrubles\source\repos\lawruble13\rocm-cmake\rocm-cmake\build\CMakeFiles\CMakeTmp\cmTC_3fa61.vcxproj]
+
+
+
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: C:/Users/lwrubles/source/repos/lawruble13/rocm-cmake/rocm-cmake/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_c4731.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.0+0538acc04 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30133 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CMakeCCompilerABI.c
+  cl /c /I"C:\github\vcpkg\scripts\buildsystems\msbuild\..\..\..\installed\x64-windows\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_c4731.dir\Debug\\" /Fd"cmTC_c4731.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeCCompilerABI.c"
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeCCompilerABI.c : fatal error C1090: PDB API call failed, error code '3': C:\Users\lwrubles\source\repos\lawruble13\rocm-cmake\rocm-cmake\build\CMakeFiles\CMakeTmp\cmTC_c4731.dir\Debug\vc142.pdb [C:\Users\lwrubles\source\repos\lawruble13\rocm-cmake\rocm-cmake\build\CMakeFiles\CMakeTmp\cmTC_c4731.vcxproj]
+
+
+
+
+Detecting CXX compiler ABI info failed to compile with the following output:
+Change Dir: C:/Users/lwrubles/source/repos/lawruble13/rocm-cmake/rocm-cmake/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_9212f.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.0+0538acc04 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30133 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CMakeCXXCompilerABI.cpp
+  cl /c /I"C:\github\vcpkg\scripts\buildsystems\msbuild\..\..\..\installed\x64-windows\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_9212f.dir\Debug\\" /Fd"cmTC_9212f.dir\Debug\vc142.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeCXXCompilerABI.cpp"
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeCXXCompilerABI.cpp : fatal error C1090: PDB API call failed, error code '3': C:\Users\lwrubles\source\repos\lawruble13\rocm-cmake\rocm-cmake\build\CMakeFiles\CMakeTmp\cmTC_9212f.dir\Debug\vc142.pdb [C:\Users\lwrubles\source\repos\lawruble13\rocm-cmake\rocm-cmake\build\CMakeFiles\CMakeTmp\cmTC_9212f.vcxproj]
+
+
+
+
+Determining if the CXX compiler works failed with the following output:
+Change Dir: C:/Users/lwrubles/source/repos/lawruble13/rocm-cmake/rocm-cmake/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_2455f.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.0+0538acc04 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30133 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  testCXXCompiler.cxx
+  cl /c /I"C:\github\vcpkg\scripts\buildsystems\msbuild\..\..\..\installed\x64-windows\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_2455f.dir\Debug\\" /Fd"cmTC_2455f.dir\Debug\vc142.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\Users\lwrubles\source\repos\lawruble13\rocm-cmake\rocm-cmake\build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx"
+C:\Users\lwrubles\source\repos\lawruble13\rocm-cmake\rocm-cmake\build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx : fatal error C1090: PDB API call failed, error code '3': C:\Users\lwrubles\source\repos\lawruble13\rocm-cmake\rocm-cmake\build\CMakeFiles\CMakeTmp\cmTC_2455f.dir\Debug\vc142.pdb [C:\Users\lwrubles\source\repos\lawruble13\rocm-cmake\rocm-cmake\build\CMakeFiles\CMakeTmp\cmTC_2455f.vcxproj]
+
+
+
+Detecting CXX compiler ABI info failed to compile with the following output:
+Change Dir: C:/Users/lwrubles/source/repos/lawruble13/rocm-cmake/rocm-cmake/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_962fb.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.0+0538acc04 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30133 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  CMakeCXXCompilerABI.cpp
+  cl /c /I"C:\github\vcpkg\scripts\buildsystems\msbuild\..\..\..\installed\x64-windows\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_962fb.dir\Debug\\" /Fd"cmTC_962fb.dir\Debug\vc142.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeCXXCompilerABI.cpp"
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.20\Modules\CMakeCXXCompilerABI.cpp : fatal error C1090: PDB API call failed, error code '3': C:\Users\lwrubles\source\repos\lawruble13\rocm-cmake\rocm-cmake\build\CMakeFiles\CMakeTmp\cmTC_962fb.dir\Debug\vc142.pdb [C:\Users\lwrubles\source\repos\lawruble13\rocm-cmake\rocm-cmake\build\CMakeFiles\CMakeTmp\cmTC_962fb.vcxproj]
+
+
+
+
+Determining if the CXX compiler works failed with the following output:
+Change Dir: C:/Users/lwrubles/source/repos/lawruble13/rocm-cmake/rocm-cmake/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_d7634.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine version 16.11.0+0538acc04 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30133 for x64
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  testCXXCompiler.cxx
+  cl /c /I"C:\github\vcpkg\scripts\buildsystems\msbuild\..\..\..\installed\x64-windows\include" /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_d7634.dir\Debug\\" /Fd"cmTC_d7634.dir\Debug\vc142.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\Users\lwrubles\source\repos\lawruble13\rocm-cmake\rocm-cmake\build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx"
+C:\Users\lwrubles\source\repos\lawruble13\rocm-cmake\rocm-cmake\build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx : fatal error C1090: PDB API call failed, error code '3': C:\Users\lwrubles\source\repos\lawruble13\rocm-cmake\rocm-cmake\build\CMakeFiles\CMakeTmp\cmTC_d7634.dir\Debug\vc142.pdb [C:\Users\lwrubles\source\repos\lawruble13\rocm-cmake\rocm-cmake\build\CMakeFiles\CMakeTmp\cmTC_d7634.vcxproj]
+
+
+
