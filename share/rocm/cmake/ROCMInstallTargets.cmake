@@ -72,7 +72,7 @@ endfunction()
 function(rocm_install_targets)
     set(options)
     set(oneValueArgs PREFIX EXPORT COMPONENT)
-    set(multiValueArgs TARGETS INCLUDE)
+    set(multiValueArgs TARGETS INCLUDE INCLUDE_SUBDIR)
 
     cmake_parse_arguments(PARSE "${options}" "${oneValueArgs}" "${multiValueArgs}" ${ARGN})
 
@@ -93,6 +93,10 @@ function(rocm_install_targets)
         set(INCLUDE_INSTALL_DIR ${CMAKE_INSTALL_INCLUDEDIR})
     endif()
 
+    if(PARSE_INCLUDE_SUBDIR)
+        set(INCLUDE_INSTALL_DIR "${INCLUDE_INSTALL_DIR}/${PARSE_INCLUDE_SUBDIR}")
+    endif()
+
     foreach(TARGET ${PARSE_TARGETS})
         foreach(INCLUDE ${PARSE_INCLUDE})
             get_filename_component(INCLUDE_PATH ${INCLUDE} ABSOLUTE)
@@ -102,7 +106,7 @@ function(rocm_install_targets)
                 target_include_directories(${TARGET} PRIVATE ${INCLUDE_PATH})
             endif()
         endforeach()
-        target_include_directories(${TARGET} INTERFACE $<INSTALL_INTERFACE:$<INSTALL_PREFIX>/include>)
+        target_include_directories(${TARGET} INTERFACE $<INSTALL_INTERFACE:$<INSTALL_PREFIX>/include/${PARSE_INCLUDE_SUBDIR}>)
     endforeach()
 
     set(runtime "runtime")
