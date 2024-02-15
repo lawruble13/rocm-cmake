@@ -8,13 +8,7 @@ get_filename_component(_new_rocmcmakebuildtools_path "${_new_rocmcmakebuildtools
 get_filename_component(_new_rocmcmakebuildtools_path_linux "${_new_rocmcmakebuildtools_path}" DIRECTORY)
 
 # Emit deprecation message
-set(_rocm_deprecation_message "The 'ROCM' CMake package is deprecated. Please use 'ROCmCMakeBuildTools' instead.")
-if(CMAKE_VERSION VERSION_GREATER_EQUAL "3.17.0")
-    message(DEPRECATION "${_rocm_deprecation_message}")
-else()
-    message(AUTHOR_WARNING "${_rocm_deprecation_message}")
-endif()
-unset(_rocm_deprecation_message)
+message(DEPRECATION "The 'ROCM' CMake package is deprecated. Please use 'ROCmCMakeBuildTools' instead.")
 
 include(CMakeFindDependencyMacro)
 
