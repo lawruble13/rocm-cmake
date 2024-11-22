@@ -36,6 +36,7 @@ jobs:
           - macos-12
           - windows-2019
         cmake-version:
+          - 3.31.0
           - 3.20.0
           - 3.10.2
         exclude:
